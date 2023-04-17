@@ -4,8 +4,8 @@ class Duviz < Formula
 
   desc "Command-line disk space usage visualization utility"
   homepage "https://github.com/soxofaan/duviz"
-  url "https://github.com/soxofaan/duviz/archive/1.1.0.tar.gz"
-  sha256 "72ecd1ffc5bcc0900bd2b5c5708cf1eb6de2c1ba512b1dfb80a802e9754dea32"
+  url "https://github.com/soxofaan/duviz/archive/refs/tags/v3.2.0.tar.gz"
+  sha256 "6592f39928a0759419bfd7ea6740df85f9fd40df297af22e8910d07608a9933f"
 
   depends_on "python@3"
 
