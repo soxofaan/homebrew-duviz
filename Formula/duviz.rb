@@ -1,4 +1,3 @@
-
 class Duviz < Formula
   include Language::Python::Virtualenv
 
@@ -10,12 +9,14 @@ class Duviz < Formula
   depends_on "python@3"
 
   def install
-    virtualenv_install_with_resources(:using => "python@3")
+    virtualenv_install_with_resources(using: "python@3")
   end
 
   test do
     mkdir "work"
     (testpath/"work/helloworld.txt").write("hello world")
-    assert_equal "__________\n[  work  ]\n[___2____]", shell_output("#{bin}/duviz --no-progress -i --width=10 work").chomp
+    assert_equal "__________\n[  work  ]\n[___2____]", shell_output(
+      "#{bin}/duviz --no-progress -i --width=10 work",
+    ).chomp
   end
 end
