@@ -1,10 +1,12 @@
-# Soxofaan Duviz
+# homebrew-duviz
 
-## How do I install these formulae?
+Homebrew tap with formula for https://github.com/soxofaan/duviz
 
-`brew install soxofaan/duviz/<formula>`
+## How do I install this formula?
 
-Or `brew tap soxofaan/duviz` and then `brew install <formula>`.
+`brew install soxofaan/duviz/duviz`
+
+Or `brew tap soxofaan/duviz` and then `brew install duviz`.
 
 ## Documentation
 
