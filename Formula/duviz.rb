@@ -7,10 +7,10 @@ class Duviz < Formula
   url "https://github.com/soxofaan/duviz/archive/1.1.0.tar.gz"
   sha256 "72ecd1ffc5bcc0900bd2b5c5708cf1eb6de2c1ba512b1dfb80a802e9754dea32"
 
-  depends_on "python" if MacOS.version <= :snow_leopard
+  depends_on "python@3"
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_install_with_resources(:using => "python@3")
   end
 
   test do
